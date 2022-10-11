@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <ROLEDAO ID="1" NAME="Admin1"/>
+    <ROLEDAO ID="2" NAME="Moderator"/>
+    <ROLEDAO ID="3" NAME="User"/>
+</dataset>
