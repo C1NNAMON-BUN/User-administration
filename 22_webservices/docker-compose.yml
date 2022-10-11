@@ -1,0 +1,29 @@
+version: "3.1"
+
+services:
+  tests:
+    image: zhilina-test-webservices
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
+    container_name: zhilina-tests-webservices
+    depends_on:
+      - task_main
+  task_main:
+    image: zhilina-webservices
+    build: .
+    container_name: zhilina-webservices
+    ports:
+      - "8080:8080"
+    depends_on:
+      - h2
+  h2:
+    container_name: zhilina-h2database
+    hostname: h2-database
+    image: nkonev/h2:1.4.200
+    volumes:
+      - ./src/main/resources/test.sql:/docker-entrypoint-initdb.d/test.sql
+    ports:
+      - "9092:9092"
+      - "8082:8082"
+    restart: "no"
