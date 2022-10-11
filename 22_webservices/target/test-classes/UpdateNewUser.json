@@ -1,0 +1,13 @@
+{
+  "id": 4,
+  "login": "ussers",
+  "password": "$2a$12$HKZ2WwoJ1btTsOBnyXs8Vu9E/QD.5VosSRgqnWoxRwP6UT4dRWfr6",
+  "email": "emsaailUser@gmail.com",
+  "firstName": "SvetaAaAaAaAa",
+  "lastName": "ZhylinaAaAaAaA",
+  "birthday": 1454364000000,
+  "roleEntity": {
+    "idRole": 2,
+    "name": "User"
+  }
+}

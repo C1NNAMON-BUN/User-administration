@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "login": "admin",
+  "password": "admin",
+  "email": "emailAdmin@gmail.com",
+  "firstName": "Alex",
+  "lastName": "Schott",
+  "birthday": 1388527200000,
+  "roleEntity": {
+    "idRole": 1,
+    "name": "Admin"
+  }
+}
