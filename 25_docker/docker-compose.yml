@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: buildo/h2database
+    container_name: h2
+    restart: always
+  app:
+    image: zhylina-25_docker:1.0
+    build: .
+    links:
+      - db
