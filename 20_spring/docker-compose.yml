@@ -1,0 +1,18 @@
+version: "3.1"
+
+services:
+  web:
+    image: tomcat:9.0
+    build: .
+    container_name: zhylina-webapp
+    ports:
+      - "8080:8080"
+    depends_on:
+      - h2
+  h2:
+    container_name: h2-database
+    hostname: h2-database
+    image: nkonev/h2:1.4.200
+    volumes:
+      - ./src/main/resources/initDb.sql:/docker-entrypoint-initdb.d/initDb.sql
+    restart: always
