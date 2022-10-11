@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <USERDAO ID="1" LOGIN="Admin" PASSWORD="123" EMAIL="email1@gmail.com" FIRSTNAME="FirstName1" LASTNAME="LastName1" BIRTHDAY="2015-01-01" ID_ROLE="1"/>
+    <USERDAO ID="2" LOGIN="Moderator" PASSWORD="1234" EMAIL="email2@gmail.com" FIRSTNAME="FirstName2" LASTNAME="LastName2" BIRTHDAY="2015-01-01" ID_ROLE="2"/>
+    <USERDAO ID="3" LOGIN="User" PASSWORD="12345" EMAIL="email3@gmail.com" FIRSTNAME="FirstName3" LASTNAME="LastName3" BIRTHDAY="2015-01-01" ID_ROLE="3"/>
+</dataset>
