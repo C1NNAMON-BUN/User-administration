@@ -1,0 +1,25 @@
+.windowLogin {
+    z-index: 100;
+    color: #fff;
+    font-family: roboto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 400px;
+    width: 360px;
+    margin: 200px auto;
+    background: #fff;
+    background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823') top left no-repeat;
+}
+
+.btn {
+    display: block; text-align:center;
+    text-decoration: none; /* Убираем подчёркивание */
+}

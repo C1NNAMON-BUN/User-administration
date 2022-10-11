@@ -1,0 +1,33 @@
+version: "3.1"
+
+services:
+  tests:
+    image: zhyina-react-frontend
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: zhyina-react-frontend
+    environment:
+      - CI=true
+    ports:
+      - "3000:3000"
+    depends_on:
+      - task_main
+  task_main:
+    image: zhyina-react-backend
+    build: ./backend/
+    container_name: zhyina-react-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - h2
+  h2:
+    container_name: zhyina-h2database
+    hostname: h2-database
+    image: nkonev/h2:1.4.200
+    volumes:
+      - ./backend/src/main/resources/test.sql:/docker-entrypoint-initdb.d/test.sql
+    ports:
+      - "9092:9092"
+      - "8082:8082"
+    restart: "no"
