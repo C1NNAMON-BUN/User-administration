@@ -1,0 +1,13 @@
+{
+  "id": 5,
+  "login": "asdsasdasdd",
+  "password": "$2a$10$UpANfS/bP0VEV26lvHN8neAHyUkRPf6NYYr.3yR0e3U7nTyYdhG2",
+  "email": "maassdasd@mail.ru",
+  "firstName": "asdasd",
+  "lastName": "asdasd",
+  "birthday": 1643493600000,
+  "roleEntity": {
+    "idRole": 2,
+    "name": "User"
+  }
+}
